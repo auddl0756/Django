@@ -1,0 +1,10 @@
+3.6 - model coding
+:: database table 생성하는 작업.
+
+<과정>
+1. models.py에 테이블 정의(클래스 형태)
+2. admin.py에 model.py에서 정의한 테이블(클래스) 임포트,반영
+3. python manage.py makemigrations
+   python mange.py migrate		//db 변경사항 반영
+4.python manage.py runserver 0:8000 	//서버 띄워서 확인
+
