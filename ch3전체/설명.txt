@@ -1,0 +1,14 @@
+<view(메소드,함수) 및 template(페이지 내용)>
+
+<과정>
+1.urls.py 작성, mysite와 polls 분리하여 작성
+ ::url/view 매핑을 정의
+2.views.index() 함수 작성,index.html
+3.views.detail() 함수 작성,detail.html
+4.views.vote() 함수 작성
+5.views.results() 함수 작성, results.html 템플릿 작성
+
+
+ ::view의 함수 context변수 -> render함수 통해 template로, 
+   결국 HttpResponse 반환
+ 
