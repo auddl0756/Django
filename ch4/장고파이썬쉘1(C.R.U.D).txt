@@ -1,0 +1,22 @@
+0. <shell start>
+ python manage.py shell
+
+1.table조회 (sql에서 select * from 테이블명 에 해당하는)
+ : 테이블명(==클래스명).objects.all()
+
+ex) Question.objects.all()
+
+
+2. 레코드 하나 생성 (sql에서 insert into에 해당)
+ : class생성.
+
+ex) q= Question(question_text="what's up?",published_date=timezone.now())
+
+q.save()
+
+3. 레코드 하나 변경 ==> property 변경하면 됨.
+ ex) q.question_text="what's new?"
+
+
+4.shell 빠져나오기
+ :exit()

@@ -1,0 +1,35 @@
+from polls.models import Question,Choice
+
+
+*filter(조건) 메소드 : 주어진 조건에 맞는 객체들을 담고 있는 QuerySet 콜렉션을 반환
+==> sql에서 where절에 해당
+
+ex)
+Question.objects.filter(id=1)
+
+Question.objects.filter(question_text__startswith='What')
+
+
+from django.utils import timezone
+currnet_year = timezone.now().year()
+Question.objects.filter(published_date__year =current_year)
+
+Question.objects.get(id=1)
+Question.objects.get(pk=2)
+
+
+===========================================
+아래는 sql에서 join에 해당하는 내용.
+
+q=Question.objects.get(pk=2)
+q.choice_set.all()
+
+Choice.objects.filter(question__published_date__year =current_year)
+
+
+============================================
+
+*삭제 (DELETE) 
+: c =q.choice_set.filter(choice_text__startswith='Sleeping')
+c.delete()
+
