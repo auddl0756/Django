@@ -18,9 +18,9 @@ on pycharm
  - <code>python manage.py startapp [앱 명칭]</code>
 6. 설정 : 
 > - ALLOW_HOSTS : ip or domain names
- - INSTALLED_APPS : include all apps in project
- - DATABASES
- - timezone
+> - INSTALLED_APPS : include all apps in project
+> - DATABASES
+> - timezone
 
 7. 테이블 생성 
 <code>python manage.py migrate</code>
@@ -35,8 +35,8 @@ on pycharm
 
 11. view/template 생성
 > - URLconf : url/view mapping at urls.py
-- view 구현
-- template (.html 등) 작성
+> - view 구현
+> - template (.html 등) 작성
 
 
 	       
