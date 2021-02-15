@@ -9,13 +9,13 @@ on pycharm
 2. use terminal on pycharm
 3. <code>pip install django</code>
 
- - check your venv/Lib if django is installed. 
- - Or check django version using <code>python -m django --version</code>
+> - check your venv/Lib if django is installed. 
+> - Or check django version using <code>python -m django --version</code>
 
 4. 프로젝트 생성
- - <code>django-admin startproject [프로젝트 명칭]</code>
+> - <code>django-admin startproject [프로젝트 명칭]</code>
 5. 앱 생성 
- - <code>python manage.py startapp [앱 명칭]</code>
+> - <code>python manage.py startapp [앱 명칭]</code>
 6. 설정 : 
 > - ALLOW_HOSTS : ip or domain names
 > - INSTALLED_APPS : include all apps in project
@@ -23,13 +23,13 @@ on pycharm
 > - timezone
 
 7. 테이블 생성 
-<code>python manage.py migrate</code>
+> <code>python manage.py migrate</code>
 
 8. 관리자 생성
-<code> python manage.py createsuperuser </code>
+> <code> python manage.py createsuperuser </code>
 
 9. 서버 실행
- <code>python manage.py runserver [ip:port] </code>
+> <code>python manage.py runserver [ip:port] </code>
 
 10. model 생성 (db table)
 
