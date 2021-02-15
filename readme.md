@@ -16,7 +16,7 @@ on pycharm
 > - <code>django-admin startproject [프로젝트 명칭]</code>
 5. 앱 생성 
 > - <code>python manage.py startapp [앱 명칭]</code>
-6. 설정 : 
+6. 설정 : in settings.py 
 > - ALLOW_HOSTS : ip or domain names
 > - INSTALLED_APPS : include all apps in project
 > - DATABASES
