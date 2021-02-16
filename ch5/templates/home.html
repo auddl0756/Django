@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+<h2>mrlee django application</h2>
+<ul>
+    {% for appname in app_list %}
+    {%with appname|add:":"|add:"index" as urlvar %}
+    <li><a href="{% url urlvar %}">{{appname}}</a></li>
+    {% endwith %}
+    {% endfor %}
+</ul>
+{% endblock content %}
+</body>
+</html>

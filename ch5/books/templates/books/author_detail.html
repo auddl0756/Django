@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autho detail</title>
+</head>
+<body>
+
+{% extends "base_book.html" %}
+
+{% block content %}
+<h1> {{object.name }}</h1>
+<p> {{object.salutation }}</p>
+<li> Email : {{ object.email }}</li>
+{% endblock content %}
+</body>
+</html>

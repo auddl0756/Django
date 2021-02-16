@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">-->
+    {% load static %}
+    <link rel = "stylesheet" href="{% static "admin/css/base.css" %}" />
+    <title>{% block title %}amazing site(base.html) {% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/"> project home</a></li>
+            <li><a href="/admin/">admin</a> </li>
+        </ul>
+        {% endblock %}
+        <br>
+    </div>
+
+<div id="content">
+    {% block content %} {% endblock %}
+</div>
+</body>
+</html>
